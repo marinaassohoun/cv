@@ -1,0 +1,124 @@
+/*** Media Query for tablet ***/
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  /*** Navbar ***/
+  .navbar {
+    max-width: 100%;
+    width: 80vw;
+  }
+  hidden {
+    display: none;
+  }
+
+  p {
+    font-size: 1em;
+  }
+  /*** Main section ***/
+  .main__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "about__section about__section  "
+      "skill__section skill__section "
+      " training__section experience__section";
+    row-gap: 1em;
+  }
+  .section__title {
+    text-align: center;
+  }
+  /*** About section ***/
+  #about__section {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 1em;
+  }
+
+  .about__title--1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  .about__title--2 {
+    font-size: 2em;
+    font-weight: 500em;
+  }
+
+  /*** skill section ***/
+
+  .skill__cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+
+  .skills {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.3em);
+    border-radius: 2.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .skill__card--item {
+    width: 15vw;
+    padding: 1.5em;
+  }
+
+  .skill__image {
+    width: 1.6em;
+  }
+
+  /*** Main skills section ***/
+  #skill__section {
+    grid-column: span 3;
+    grid-row: 2;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1em;
+  }
+  .soft__skills {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+  .soft__skills .skill__cards {
+    grid-template-columns: repeat(3, 15em);
+  }
+  .hard__skills {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .tools {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+
+  /*** Timeline ***/
+
+  .timeline__date {
+    font-size: 1em;
+  }
+  .main__training p,
+  .main__experience p {
+    font-size: 1.3rem;
+  }
+
+  /*** Training section ***/
+  #training__section {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #training__section,
+  #experience__section {
+    margin-bottom: 1em;
+  }
+  /*** Experience section ***/
+  #experience__section {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <title>CV de Marina Assohoun - Développeuse Web</title>
+
+    <meta
+      name="description"
+      content="CV numérique de Marina ASSOHOUN. Développeuse Web, curieuse et passionnée. Je suis à la recherche d'un emploi. "
+    />
+    <meta
+      name="keywords"
+      content="CV, développeuse web, back-end, HTML, CSS, JavaScript, Symfony"
+    />
+
+    <meta name="author" content="Marina Assohoun" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO -->
+
+    <meta property="og:title" content="Marina Assohoun - Développeuse web" />
+    <meta
+      property="og:description"
+      content="CV numérique de Marina Assohoun, développeuse web, curieuse et passionnée. Je suis à la recherche d'un emploi. "
+    />
+    <meta property="canonical" href="https://www.massohoun.github.io" />
+    <meta property="language" content="fr" />
+    <meta name="geo.region" content="FR" />
+    <meta
+      property="og:image"
+      content="http://massohoun.github.io/assets/images/am_logo.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://massohoun.github.io/assets/images/am_logo.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta
+      property="og:image:alt"
+      content="Logo du site web réalisé par Marina Assohoun"
+    />
+    <meta property="og:site_name" content="CV numérique de Marina Assohoun" />
+    <meta property="og:url" content="https://www.massohoun.github.io" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/responsive_tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/responsive_desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="print"
+      href="assets/css/print.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/am_logo.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="wrapper grid">
+      <header class="header flex">
+        <!-- Navabr -->
+        <nav class="navbar u-no-print" id="navbar">
+          <ul class="navbar__item flex">
+            <li class="navbar__item--list">
+              <a href="#top" class="logo__link navbar__item--link">
+                <img
+                  class="logo__img"
+                  src="assets/images/am_logo.png"
+                  alt="logo"
+                  id="logo"
+                />
+              </a>
+            </li>
+            <li class="navbar__item--list hidden">
+              <a
+                class="navbar__item--link"
+                href="#about__section"
+                aria-label="Aller à la section À propos"
+              >
+                <i
+                  class="navbar__item--icon fa-solid fa-address-card fa-lg"
+                ></i>
+                <span class="navbar__item--tooltip" id="about-tooltip"
+                  >À propos</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list hidden">
+              <a
+                class="navbar__item--link"
+                href="#training__section"
+                aria-label="Aller à la section Formation"
+              >
+                <i
+                  class="navbar__item--icon fa-solid fa-graduation-cap fa-lg"
+                ></i>
+                <span class="navbar__item--tooltip" id="training-tooltip"
+                  >Formation</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list hidden">
+              <a
+                class="navbar__item--link"
+                href="#experience__section"
+                aria-label="Aller à la section Expériences"
+              >
+                <i class="navbar__item--icon fa-solid fa-briefcase fa-lg"></i>
+                <span class="navbar__item--tooltip" id="experience-tooltip"
+                  >Expériences</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list">
+              <a
+                class="navbar__item--link"
+                href="tel:0651945451"
+                aria-label="Lancer l'appel téléphonique du numéro: 0651945451"
+              >
+                <i class="navbar__item--icon fa-solid fa-phone fa-lg"></i>
+                <span class="navbar__item--tooltip" id="phone-tooltip"
+                  >Appeler</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list">
+              <a
+                class="navbar__item--link print"
+                href="/cv_marina_assohoun.pdf"
+                target="_blank"
+                rel="noopener no-referrer"
+                aria-label="Lancer l'impression du cv de Marina Assohoun"
+              >
+                <i
+                  class="print__icon navbar__item--icon fa-solid fa-print fa-lg"
+                ></i>
+                <span class="navbar__item--tooltip" id="print-tooltip"
+                  >Imprimer</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list">
+              <!-- <a class="navbar__item--link theme"> -->
+              <i
+                id="theme__icon"
+                class="navbar__item--icon fa-solid fa-moon fa-lg"
+              ></i>
+              <span class="navbar__item--tooltip" id="theme-tooltip"
+                >Thème</span
+              >
+              <!-- </a> -->
+            </li>
+          </ul>
+        </nav>
+
+        <!-- </div> -->
+      </header>
+
+      <main class="main__wrapper grid" id="top">
+        <!-- about section -->
+        <section class="main__about grid" id="about__section">
+          <div class="about grid">
+            <div class="about__container--1">
+              <figure class="about__image flex">
+                <img
+                  class="about__image--marina"
+                  src="assets/images/marinaassohoun.jpg"
+                  alt="Photographie de Marina Assohoun"
+                />
+                <figcaption class="about__image--overlay">
+                  <a class="about__image--overlay-text" href="#about__title">
+                    C'est moi !</a
+                  >
+                </figcaption>
+              </figure>
+              <div class="social">
+                <ul class="social__nav grid">
+                  <li class="social__nav--link">
+                    <a
+                      class="social__nav--item"
+                      href="https://twitter.com/marinassoh"
+                      target="_blank"
+                      aria-label="Profil Twitter de Marina Assohoun"
+                    >
+                      <i class="social__icon fa-brands fa-twitter fa-xl"></i>
+                    </a>
+                  </li>
+                  <li class="social__nav--link">
+                    <a
+                      class="social__nav--item"
+                      href="https://www.linkedin.com/in/marina-assohoun-b8547598"
+                      target="_blank"
+                      aria-label="Profil LinkedIn de Marina Assohoun"
+                    >
+                      <i
+                        class="social__nav--icon fa-brands fa-linkedin fa-xl"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="social__nav--link">
+                    <a
+                      class="social__nav--item"
+                      href="https://github.com/marinaassohoun"
+                      target="_blank"
+                      aria-label="Profil GitHub de Marina Assohoun"
+                    >
+                      <i
+                        class="social__nav--icon fa-brands fa-github fa-xl"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="social__nav--link">
+                    <a
+                      class="social__nav--item"
+                      href="https://codepen.io/marinassoh"
+                      target="_blank"
+                      aria-label="Profil CodePen de Marina Assohoun"
+                    >
+                      <i
+                        class="social__nav--icon fa-brands fa-codepen fa-xl"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about__container--2">
+              <h1 class="about__title--1">Marina Assohoun</h1>
+              <h2 class="about__title--2">Développeuse Web</h2>
+              <address class="about__adress">Dinan, Côte d'Armor</address>
+
+              <p class="about__text">Bienvenue sur mon CV numérique.</p>
+
+              <p class="about__text">
+                Je suis à la recherche d'une entreprise pouvant m'accueillir en
+                alternance (contrat de professionnalisation), pour une formation
+                de Concepteur Développeur d'Application, pour une durée de 16
+                mois à compter du
+                <time datetime="2023-10-22">22 octobre 2023</time> dispensé par
+                <a
+                  href="https://oclock.io/formations/alternance"
+                  target="_blank"
+                  alt="liens vers le Site Web d'O'Clock"
+                  >O'Clock</a
+                >
+              </p>
+              <p class="about__text">
+                Après avoir exploré divers domaines, j'ai découvert une
+                véritable passion pour le développement web lors d'une formation
+                intensive de 6 mois de
+                <span>Développeuse Web et web mobile</span>
+                <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> spécialisé
+                <em>Symfony</em> à l'école <em>O'clock</em>, qui s'est terminé
+                le <time datetime="2023-08-03"> 3 août 2023</time>.
+              </p>
+              <p class="about__text">
+                Animée par la volonté de relever de nouveaux défis, de
+                développer en permanence mes compétences , je suis enthousiaste
+                à l'idée de rejoindre votre équipe, de contribuer à l'évolution
+                de votre structure et de continuer à renforcer mes compétences
+                professionnelles.
+              </p>
+              <div class="about__button grid u-no-print">
+                <a
+                  class="about__mail cv__link"
+                  href="mailto:marinaassohoun@gmail.com"
+                  target="_blank"
+                >
+                  <i class="cv__icon envelope fa-solid fa-envelope"></i>
+                  Contactez-moi
+                </a>
+                <a
+                  class="about__cv cv__link"
+                  href="/assets/fichiers/CV_KANGAH MARINA_ASSOHOUN_CDA.pdf"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                >
+                  <i class="cv__icon download fa-solid fa-download"></i>
+                  Mon CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- skills -->
+
+        <section class="grid main__skills" id="skill__section">
+          <!-- soft skills -->
+          <div class="skills soft__skills">
+            <h3 class="section__title soft__skills--title">Compétences</h3>
+
+            <div class="skill__cards grid">
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Curieuse"
+                    >curieuse</span
+                  >
+                </div>
+              </div>
+
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Autonome"
+                    >Autonome</span
+                  >
+                </div>
+              </div>
+
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Aisance relationnelle"
+                    >Aisance relationnelle
+                  </span>
+                </div>
+              </div>
+
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Créative"
+                    >Créative
+                  </span>
+                </div>
+              </div>
+
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Patiente"
+                    >Patiente</span
+                  >
+                </div>
+              </div>
+
+              <div class="skill__card--item">
+                <div class="card__item">
+                  <span
+                    class="card__item--text"
+                    aria-label="Compétence : Ambitieuse"
+                    >Ambitieuse
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hard skills  -->
+          <div class="skills hard__skills techno">
+            <h3 class="section__title hard__skills--title">Technologies</h3>
+            <div class="skill__cards grid">
+              <div class="skill__card--item">
+                <figure class="html card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="html__icon"
+                    src="assets/images/html-logo.svg"
+                    alt="logo HTML5"
+                    aria-labelledby="html__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : HTML5"
+                  >
+                    <abbr title="HyperText Markup Language">HTML</abbr>5
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="css card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="css__icon"
+                    src="assets/images/css3-logo.svg"
+                    alt="logo CSS"
+                    aria-label="Technologie : CSS3"
+                    aria-labelledby="css__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : CSS3"
+                  >
+                    <abbr title="Cascading Style Sheets">CSS 3</abbr>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="javascript card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="javascript__icon"
+                    src="assets/images/javascript-logo.svg"
+                    alt="logo JavaScript"
+                    aria-labelledby="javascript__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Javascript"
+                  >
+                    <em>JavaScript</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="php card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="php__icon"
+                    src="assets/images/php-logo.svg"
+                    alt="logo Php"
+                    aria-labelledby="php__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : php"
+                  >
+                    <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="wordpress card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="wordpress__icon"
+                    src="assets/images/wordpress-logo.svg"
+                    alt="logo Wordpress"
+                    aria-labelledby="wordpress__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Wordpress"
+                  >
+                    <em>Wordpress</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="bootstrap card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="bootstrap__icon"
+                    src="assets/images/bootstrap-logo.svg"
+                    alt="logo Bootstrap 5"
+                    aria-labelledby="bootstrap__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Bootstrap 5"
+                  >
+                    <em>Bootstrap 5</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="elementor card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="sql__icon"
+                    src="assets/images/logo-sql-database.svg"
+                    alt="logo SQL"
+                    aria-labelledby="sql__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : SQL"
+                  >
+                    <abbr title="Structured Query Language">SQL</abbr>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="bootstrap card__item">
+                  <img
+                    class="skill__image"
+                    id="symfony__icon"
+                    src="assets/images/symfony-logo.svg"
+                    alt="logo Symfony"
+                    aria-labelledby="symfony__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Symfony"
+                  >
+                    <em>Symfony</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="laravel card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="laravel__icon"
+                    src="assets/images/laravel-logo.svg"
+                    alt="logo Laravel"
+                    aria-labelledby="laravel__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Laravel"
+                  >
+                    <em>Laravel</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="MariaDb card__item">
+                  <img
+                    class="skill__image"
+                    id="maraidb__icon"
+                    src="assets/images/mariadb-logo.svg"
+                    alt="logo mariadb-logo"
+                    aria-labelledby="mariadb__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : MariaDB"
+                  >
+                    <em>MariaDB</em>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- outils -->
+          <div class="skills tools">
+            <h3 class="section__title tools__title">Outils</h3>
+            <div class="skill__cards grid">
+              <div class="skill__card--item">
+                <figure class="figma card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="figma__icon"
+                    src="assets/images/figma-logo.svg"
+                    alt="logo Figma"
+                    aria-labelledby="figma__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Figma"
+                  >
+                    <em>Figma</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="photoshop card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="photoshop__icon"
+                    src="assets/images/photoshop-logo.svg"
+                    alt="logo Photoshop"
+                    aria-labelledby="photoshop__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Photoshop"
+                  >
+                    <em>Photoshop</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="affinity__Photo card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="affinity__icon"
+                    src="assets/images/affinity-photo-logo.svg"
+                    alt="logo Affinity Photo"
+                    aria-labelledby="affinity__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Affinity Photo"
+                  >
+                    <em>Affinity Photo</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="git card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="github__icon"
+                    src="assets/images/github-logo.svg"
+                    alt="logo Github"
+                    aria-labelledby="github__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Github"
+                  >
+                    <em>Github</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="slack card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="slack__icon"
+                    src="assets/images/slack-logo.svg"
+                    alt="logo Slack"
+                    aria-labelledby="slack__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Slack"
+                  >
+                    <em>Slack</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="trello card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="trello__icon"
+                    src="assets/images/elementor-logo.svg"
+                    alt="logo Trello"
+                    aria-labelledby="trello__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Trello"
+                  >
+                    <em>Trello</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="git card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="git__icon"
+                    src="assets/images/git-logo.svg"
+                    alt="logo Git"
+                    aria-labelledby="git__icon"
+                  />
+                  <figcaption class="card__item--text" aria-label="Outil : Git">
+                    <em>Git</em>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="vscode card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="vscode__icon"
+                    src="assets/images/vscode-logo.svg"
+                    alt="logo VS Code"
+                    aria-labelledby="vscode__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : VS Code"
+                  >
+                    <abbr title="VS Code: Visual Studio Code">VS Code</abbr>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="discord card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="discord__icon"
+                    src="assets/images/discord-logo.svg"
+                    alt="logo Discord"
+                    aria-labelledby="discord__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Outil : Discord"
+                  >
+                    <em>Discord</em>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- training -->
+        <section class="main__training grid" id="training__section">
+          <h3 class="section__title training__title">Formation</h3>
+          <div class="timeline__wrapper grid">
+            <div class="timeline timeline__right">
+              <!-- TITRE DEVELOPPEUR WEB  -->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2023-02-08">2023 </time>
+                  (en cours)
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+              </div>
+              <div class="timeline__component timeline__component--bg">
+                <h4 class="timeline__title">
+                  Titre Professionnel Développeuse Web et Web Mobile
+                </h4>
+                <span class="timeline__place" aria-label="Téléformation">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Téléformation</span
+                >
+                <p class="timeline__paragraph">
+                  <i></i>
+                  3 mois de socle :
+                  <abbr title="HyperText Markup Language">HTML</abbr>
+                  ,
+                  <abbr title="Cascading Style Sheets">CSS3</abbr>
+                  ,
+                  <i>JavaScript</i>
+                  ,
+                  <abbr title="Hypertext Preprocessor">PHP</abbr>,
+                  <abbr title="Structured Query Language">SQL</abbr>,
+                  <em>Laravel</em>, <em>Symfony</em><br />
+                  1 mois de spécialisation en
+                  <em>Symfony</em><br />
+                  1 mois de projet professionnel
+                </p>
+              </div>
+
+              <!-- CAP PATISSIER -->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2023-02-08">2023 </time>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+                <div class="timeline__point timeline__point--bottom"></div>
+              </div>
+              <div
+                class="timeline__component timeline__component--bottom timeline__component--bg"
+              >
+                <h4 class="timeline__title">CAP Pâtissier</h4>
+                <span class="timeline__place" aria-label="Champigny-sur-Marne">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Champigny-sur-Marne</span
+                >
+              </div>
+              <!-- BTS MUC -->
+
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2011-06-27">2011 </time>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+              </div>
+              <div class="timeline__component timeline__component--bg">
+                <h4 class="timeline__title">
+                  BTS MUC - Management des Unités Commerciales
+                </h4>
+                <span class="timeline__place" aria-label="Saint-denis">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Saint-denis</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- expériences -->
+        <section class="main__experience grid" id="experience__section">
+          <h3 class="section__title experience__title">Expériences</h3>
+
+          <div class="experience__item">
+            <div class="timeline timeline__right">
+              <!-- TITRE DEVELOPPEUR WEB  -->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <span>&Agrave; déterminer </span>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+              </div>
+              <div class="timeline__component timeline__component--bg">
+                <h4 class="timeline__title">Votre entreprise</h4>
+                <span class="timeline__place" aria-label="À déterminer">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  &Agrave; déterminer</span
+                >
+                <p class="timeline__paragraph">
+                  Envie de m'aider à complèter cette rubrique ?
+                </p>
+                <a
+                  class="timeline__link"
+                  href="mailto:marinaassohoun@gmail.com"
+                  target="_blank"
+                  >Contactez-moi !</a
+                >
+              </div>
+
+              <!-- MICRO ENTREPRISE-->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2022-01-02">2022 </time>
+                  (en cours)
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+                <div class="timeline__point timeline__point--bottom"></div>
+              </div>
+              <div
+                class="timeline__component timeline__component--bottom timeline__component--bg"
+              >
+                <h4 class="timeline__title">Entrepreneuse Individuel</h4>
+                <span class="timeline__place" aria-label="À domicile">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  &Agrave; domicile</span
+                >
+                <p class="timeline__paragraph">
+                  Réalisation d'un site E-commerce <em>Woocommerce</em>,
+                  utilisant le constructeur de page, <em>Elementor</em>.
+                  <br />
+                  Gestion de site internet sur <em>Wordpress</em>.
+                  <br />
+                  Gestion administrative et commerciale.
+                  <br />
+                  Création et réalisation d'objets personnalisés (gravure,
+                  flocage, broderie).
+                </p>
+              </div>
+
+              <!-- Autres expériences -->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2011-06-27">2011 </time>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+              </div>
+              <div class="timeline__component timeline__component--bg">
+                <h4 class="timeline__title">Autres expériences</h4>
+                <span
+                  class="timeline__place"
+                  aria-label="Ile-de-France / Bretagne"
+                >
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Ile-de-France / Bretagne</span
+                >
+                <table class="timeline__table">
+                  <tr class="timeline__table--item">
+                    <th class="timeline__table--date">2022</th>
+                    <td class="timeline__table--text">
+                      Commis de cuisine, opératrice
+                    </td>
+                  </tr>
+                  <tr class="timeline__table--item">
+                    <th class="timeline__table--date">2019-2020</th>
+                    <td class="timeline__table--text">
+                      Responsable de produits chauds
+                    </td>
+                  </tr>
+                  <tr class="timeline__table--item">
+                    <th class="timeline__table--date">2018-2019</th>
+                    <td class="timeline__table--text">
+                      Assistante ressources humaines
+                    </td>
+                  </tr>
+                  <tr class="timeline__table--item">
+                    <th class="timeline__table--date">2016-2017</th>
+                    <td class="timeline__table--text">Aide-pâtissière</td>
+                  </tr>
+                  <tr class="timeline__table--item">
+                    <th class="timeline__table--date">2014-2016</th>
+                    <td class="timeline__table--text">
+                      Conseillère sociale / vendeuse
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer u-no-print">
+        <div class="footer__top grid">
+          <h4 class="footer__title">Mes réseaux</h4>
+
+          <div class="social">
+            <ul class="social__nav grid">
+              <li class="social__nav--link">
+                <a
+                  class="social__nav--item"
+                  href="https://twitter.com/marinassoh"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-twitter fa-xl"></i>
+                </a>
+              </li>
+              <li class="social__nav--link">
+                <a
+                  class="social__nav--item"
+                  href="https://www.linkedin.com/in/marina-assohoun-b8547598"
+                  target="_blank"
+                >
+                  <i class="social__nav--icon fa-brands fa-linkedin fa-xl"></i>
+                </a>
+              </li>
+              <li class="social__nav--link">
+                <a
+                  class="social__nav--item"
+                  href="https://github.com/marinaassohoun"
+                  target="_blank"
+                >
+                  <i class="social__nav--icon fa-brands fa-github fa-xl"></i>
+                </a>
+              </li>
+              <li class="social__nav--link">
+                <a
+                  class="social__nav--item"
+                  href="https://codepen.io/marinassoh"
+                  target="_blank"
+                >
+                  <i class="social__nav--icon fa-brands fa-codepen fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer__text">Marina Assohoun | © Copyright 2023</p>
+          <div class="scroll-arrow">
+            <a href="">
+              <i></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
