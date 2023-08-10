@@ -1,0 +1,127 @@
+/*** Media Query for desktop ***/
+@media screen and (min-width: 1250px) {
+  /*** Navbar ***/
+  .navbar {
+    background-color: rgba(245, 245, 245, 0.3);
+    backdrop-filter: blur(0.4em);
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0.3em;
+    border-radius: 5em;
+    position: fixed;
+    bottom: 1em;
+    max-width: 100em;
+    width: 80vw;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+  /*** Main section ***/
+  .main__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "about__section about__section training__section"
+      "skill__section  skill__section experience__section";
+    row-gap: 1em;
+  }
+  .section__title {
+    text-align: center;
+  }
+  /*** About section ***/
+  #about__section {
+    grid-column: span 2;
+    grid-row: 1;
+    margin-top: 1em;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .about__text {
+    font-size: 1em;
+  }
+  .about__title--1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  .about__title--2 {
+    font-size: 2em;
+  }
+
+  .section__title {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  /*** skill section ***/
+
+  .card__item {
+    padding: 1em 2em;
+  }
+
+  .skill__cards {
+    grid-template-columns: repeat(3, 15em);
+    justify-items: center;
+    row-gap: 1.5em;
+    column-gap: 1.7em;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .skills {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.3em);
+    border-radius: 2.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    max-width: 100%;
+  }
+  .skill__card--item {
+    width: 15em;
+  }
+  .card__item--text {
+    font-size: 1em;
+  }
+  .skill__image {
+    width: 1.6em;
+  }
+
+  /*** Main skills section ***/
+  #skill__section {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+  #training__section p,
+  #experience__section p {
+    font-size: 1.3rem;
+  }
+  .hard__skills {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .tools {
+    margin-bottom: 1em;
+  }
+
+  /*** Timeline ***/
+  .timeline {
+    min-width: none;
+    max-width: 90%;
+  }
+  .timeline__date {
+    font-size: 1em;
+  }
+  /*** Training section ***/
+  #training__section {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /*** Experience section ***/
+  #experience__section {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
