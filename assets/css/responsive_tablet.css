@@ -37,14 +37,17 @@
   }
 
   .about__title--1 {
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 700;
   }
+
   .about__title--2 {
     font-size: 2em;
     font-weight: 500em;
   }
-
+  .about__text {
+    font-size: 1.1em;
+  }
   /*** skill section ***/
 
   .skill__cards {

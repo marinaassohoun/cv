@@ -42,7 +42,9 @@
   }
   .about__text {
     font-size: 1em;
+    text-align: justify;
   }
+
   .about__title--1 {
     font-size: 3em;
     font-weight: 700;

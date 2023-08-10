@@ -193,7 +193,6 @@ i:hover {
 .main__wrapper {
   grid-area: main;
   width: 90vw;
-  /* max-width: 100%; */
   margin: 0 auto;
   justify-content: center;
   row-gap: 1em;
@@ -291,7 +290,6 @@ i:hover {
 }
 
 .about__text {
-  text-align: justify;
   font-size: 1.3em;
 }
 
