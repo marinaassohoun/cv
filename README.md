@@ -11,11 +11,11 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 
 >## Adresse web du CV :
 >
->https://github.com/massohoun.github.io
+>https://massohoun.github.io
 
 >## Version PDF téléchargeable du CV :
 >
->https://github.com/massohoun.github.io/assets/fichiers/CV_KANGAH_MARINA_ASSOHOUN_CDA.pdf
+>https://massohoun.github.io/assets/fichiers/CV_KANGAH_MARINA_ASSOHOUN_CDA.pdf
 
 ### Technologies utilisés :
 - HTML
