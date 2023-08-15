@@ -11,11 +11,12 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 
 >## Adresse web du CV :
 >
->https://marinaassohoun.github.io/cv/
+>[ici](https://marinaassohoun.github.io/cv)
 
 >## Version PDF téléchargeable du CV :
 >
->https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun_cda.pdf
+>[ici](https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun_cda.pdf)
+
 
 ### Technologies utilisés :
 - HTML
