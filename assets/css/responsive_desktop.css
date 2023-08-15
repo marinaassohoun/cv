@@ -18,6 +18,9 @@
   .hidden {
     display: none;
   }
+  .navbar__item--icon {
+    font-size: 1.5em;
+  }
   /*** Main section ***/
   .main__wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -89,7 +92,14 @@
   .skill__image {
     width: 1.6em;
   }
-
+  #technical-skill__cards {
+    grid-template-columns: repeat(2, 40em);
+    column-gap: 2em;
+    row-gap: 1em;
+  }
+  .technical-skill__card--item {
+    margin: 2em;
+  }
   /*** Main skills section ***/
   #skill__section {
     grid-column: span 2;

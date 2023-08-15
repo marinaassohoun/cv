@@ -11,7 +11,7 @@
 
     <meta
       name="description"
-      content="CV numérique de Marina ASSOHOUN. Développeuse Web, curieuse et passionnée. Je suis à la recherche d'un emploi. "
+      content="CV numérique de Marina ASSOHOUN. Développeuse Web, curieuse et passionnée. Je suis à la recherche d'un d'une alternance pour la formation de Concepteur Développeur d'Application. "
     />
     <meta
       name="keywords"
@@ -105,17 +105,27 @@
                 />
               </a>
             </li>
-            <li class="navbar__item--list hidden">
+            <li class="navbar__item--list">
               <a
                 class="navbar__item--link"
                 href="#about__section"
                 aria-label="Aller à la section À propos"
               >
-                <i
-                  class="navbar__item--icon fa-solid fa-address-card fa-lg"
-                ></i>
+                <i class="navbar__item--icon fa-solid fa-address-card"></i>
                 <span class="navbar__item--tooltip" id="about-tooltip"
                   >À propos</span
+                >
+              </a>
+            </li>
+            <li class="navbar__item--list hidden">
+              <a
+                class="navbar__item--link"
+                href="#skill__section"
+                aria-label="Aller à la section Compétences"
+              >
+                <i class="navbar__item--icon fa-solid fa-sitemap"></i>
+                <span class="navbar__item--tooltip" id="skills-tooltip"
+                  >Compétences</span
                 >
               </a>
             </li>
@@ -125,9 +135,7 @@
                 href="#training__section"
                 aria-label="Aller à la section Formation"
               >
-                <i
-                  class="navbar__item--icon fa-solid fa-graduation-cap fa-lg"
-                ></i>
+                <i class="navbar__item--icon fa-solid fa-graduation-cap"></i>
                 <span class="navbar__item--tooltip" id="training-tooltip"
                   >Formation</span
                 >
@@ -139,7 +147,7 @@
                 href="#experience__section"
                 aria-label="Aller à la section Expériences"
               >
-                <i class="navbar__item--icon fa-solid fa-briefcase fa-lg"></i>
+                <i class="navbar__item--icon fa-solid fa-briefcase"></i>
                 <span class="navbar__item--tooltip" id="experience-tooltip"
                   >Expériences</span
                 >
@@ -151,7 +159,7 @@
                 href="tel:0651945451"
                 aria-label="Lancer l'appel téléphonique du numéro: 0651945451"
               >
-                <i class="navbar__item--icon fa-solid fa-phone fa-lg"></i>
+                <i class="navbar__item--icon fa-solid fa-phone"></i>
                 <span class="navbar__item--tooltip" id="phone-tooltip"
                   >Appeler</span
                 >
@@ -165,9 +173,7 @@
                 rel="noopener no-referrer"
                 aria-label="Lancer l'impression du cv de Marina Assohoun"
               >
-                <i
-                  class="print__icon navbar__item--icon fa-solid fa-print fa-lg"
-                ></i>
+                <i class="print__icon navbar__item--icon fa-solid fa-print"></i>
                 <span class="navbar__item--tooltip" id="print-tooltip"
                   >Imprimer</span
                 >
@@ -177,7 +183,7 @@
               <!-- <a class="navbar__item--link theme"> -->
               <i
                 id="theme__icon"
-                class="navbar__item--icon fa-solid fa-moon fa-lg"
+                class="navbar__item--icon fa-solid fa-moon"
               ></i>
               <span class="navbar__item--tooltip" id="theme-tooltip"
                 >Thème</span
@@ -260,7 +266,9 @@
             </div>
             <div class="about__container--2">
               <h1 class="about__title--1">Marina Assohoun</h1>
-              <h2 class="about__title--2">Développeuse Web</h2>
+              <h2 class="about__title--2">
+                Alternance Concepteur Développeur d'Application
+              </h2>
               <address class="about__adress">Dinan, Côte d'Armor</address>
 
               <p class="about__text">Bienvenue sur mon CV numérique.</p>
@@ -301,7 +309,7 @@
                   target="_blank"
                 >
                   <i class="cv__icon envelope fa-solid fa-envelope"></i>
-                  Contactez-moi
+                  Mon e-mail
                 </a>
                 <a
                   class="about__cv cv__link"
@@ -318,11 +326,10 @@
         </section>
 
         <!-- skills -->
-
         <section class="grid main__skills" id="skill__section">
           <!-- soft skills -->
           <div class="skills soft__skills">
-            <h3 class="section__title soft__skills--title">Compétences</h3>
+            <h3 class="section__title soft__skills--title">Soft Skills</h3>
 
             <div class="skill__cards grid">
               <div class="skill__card--item">
@@ -349,8 +356,8 @@
                 <div class="card__item">
                   <span
                     class="card__item--text"
-                    aria-label="Compétence : Aisance relationnelle"
-                    >Aisance relationnelle
+                    aria-label="Compétence : Travail en équipe"
+                    >Travail en équipe
                   </span>
                 </div>
               </div>
@@ -379,9 +386,84 @@
                 <div class="card__item">
                   <span
                     class="card__item--text"
-                    aria-label="Compétence : Ambitieuse"
-                    >Ambitieuse
+                    aria-label="Compétence : Capacité d'adaptation"
+                    >Capacité d'adaptation
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Technical Skills -->
+          <div class="skills technical__skills">
+            <h3 class="section__title technical__skills--title">
+              Compétences Techniques
+            </h3>
+
+            <div class="skill__cards grid" id="technical-skill__cards">
+              <div class="technical-skill__card--item">
+                <div class="technical-card__item">
+                  <div class="card__item--text">
+                    <span
+                      aria-label="Compétence technique: Intégration web"
+                      class="card__item--title"
+                    >
+                      Intégration web :
+                    </span>
+                    Création et intégration de sites web et d'application
+                    mobiles responsive.
+                    <abbr title="HyperText Markup Language">HTML</abbr>,
+                    <abbr title="Cascading Style Sheets 3">CSS3</abbr>,
+                    <abbr title="JavaScript">JS</abbr>,
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-skill__card--item">
+                <div class="technical-card__item">
+                  <div class="card__item--text">
+                    <span
+                      aria-label="Compétence technique : Autonome"
+                      class="card__item--title"
+                    >
+                      Développement Back-end :
+                    </span>
+                    Création et gestion de base de données relationnelle avec
+                    <em>MySQL</em>, <em>MariaDB</em>. Création d'une interface
+                    administrateur back-end avec <em>Symfony</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-skill__card--item">
+                <div class="technical-card__item">
+                  <div class="card__item--text">
+                    <span
+                      class="card__item--title"
+                      aria-label="Compétence technique : Développement front-end"
+                    >
+                      Développement front-end :
+                    </span>
+                    <em>Twig</em>,
+                    <abbr title="Sass: Syntactically Awesome Style Sheet"
+                      >Sass</abbr
+                    >, ( <em>ReactJS</em>, <em>Redux</em>, <em>Axios</em> et
+                    <em>TypeScript</em>
+                    en cours d'apprentissage ).
+                  </div>
+                </div>
+              </div>
+              <div class="technical-skill__card--item">
+                <div class="technical-card__item">
+                  <div class="card__item--text">
+                    <span
+                      class="card__item--title"
+                      aria-label="Compétence technique: Gestion de projet"
+                      >Gestion de projet :</span
+                    >
+                    Rédaction d'un cachier des charges, user stories,
+                    wireframes, suivi technique, versionning <em>Github</em>,
+                    méthodologie <em>SCRUM</em>
+                  </div>
                 </div>
               </div>
             </div>
@@ -456,6 +538,25 @@
                     aria-label="Technologie : php"
                   >
                     <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="skill__card--item">
+                <figure class="php card__item">
+                  <img
+                    class="skill__image logo__html"
+                    id="sass__icon"
+                    src="assets/images/sass_icon.svg"
+                    alt="logo Php"
+                    aria-labelledby="sass__icon"
+                  />
+                  <figcaption
+                    class="card__item--text"
+                    aria-label="Technologie : Sass"
+                  >
+                    <abbr title="Sass: Syntactically Awesome Style Sheet"
+                      >Sass</abbr
+                    >
                   </figcaption>
                 </figure>
               </div>
@@ -725,11 +826,41 @@
           <h3 class="section__title training__title">Formation</h3>
           <div class="timeline__wrapper grid">
             <div class="timeline timeline__right">
-              <!-- TITRE DEVELOPPEUR WEB  -->
+              <!-- TITRE CONCEPTEUR DEVELOPPEUR WEB  -->
               <div class="timeline__component timeline__component--date">
                 <div class="timeline__date timeline__date--right">
-                  <time datetime="2023-02-08">2023 </time>
-                  (en cours)
+                  <time datetime="2023-10-22">2023 </time> à
+                  <time datetime="2023-01-22">2025 </time>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+              </div>
+              <!-- TITRE DEVELOPPEUR WEB  -->
+              <div class="timeline__component timeline__component--bg">
+                <h4 class="timeline__title">
+                  Titre Professionnel Concepteur Développeur d'Application
+                </h4>
+                <span class="timeline__place" aria-label="Téléprésentiel">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Téléprésentiel</span
+                >
+                <span>Objectifs: </span>
+                <p class="timeline__paragraph">
+                  Maîtriser les concepts de la programmation orientée objet.
+                </p>
+                <p class="timeline__paragraph">
+                  Être en capable de mettre en place un environnement de
+                  développement conteneurisé.
+                </p>
+                <p class="timeline__paragraph">
+                  Être capable de concevoir et de développer une architecture
+                  frontend efficace et évolutive.
+                </p>
+              </div>
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2023-08-03">2023 </time>
                 </div>
               </div>
               <div class="timeline__middle">
@@ -739,16 +870,16 @@
                 <h4 class="timeline__title">
                   Titre Professionnel Développeuse Web et Web Mobile
                 </h4>
-                <span class="timeline__place" aria-label="Téléformation">
+                <span class="timeline__place" aria-label="Téléprésentiel">
                   <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
-                  Téléformation</span
+                  Téléprésentiel</span
                 >
                 <p class="timeline__paragraph">
                   <i></i>
                   3 mois de socle :
                   <abbr title="HyperText Markup Language">HTML</abbr>
                   ,
-                  <abbr title="Cascading Style Sheets">CSS3</abbr>
+                  <abbr title="Cascading Style Sheets 3">CSS3</abbr>
                   ,
                   <i>JavaScript</i>
                   ,
@@ -757,7 +888,8 @@
                   <em>Laravel</em>, <em>Symfony</em><br />
                   1 mois de spécialisation en
                   <em>Symfony</em><br />
-                  1 mois de projet professionnel
+                  1 mois de projet professionnel en tant que Product Owner et
+                  Lead Dev Back-end.
                 </p>
               </div>
 
@@ -809,7 +941,7 @@
 
           <div class="experience__item">
             <div class="timeline timeline__right">
-              <!-- TITRE DEVELOPPEUR WEB  -->
+              <!-- Nouvelle expérience -->
               <div class="timeline__component timeline__component--date">
                 <div class="timeline__date timeline__date--right">
                   <span>&Agrave; déterminer </span>
@@ -835,6 +967,73 @@
                 >
               </div>
 
+              <!-- MICRO ENTREPRISE-->
+              <div class="timeline__component timeline__component--date">
+                <div class="timeline__date timeline__date--right">
+                  <time datetime="2023-07-04">07-2023 </time>/
+                  <time datetime="2023-08-03">08-2023 </time>
+                </div>
+              </div>
+              <div class="timeline__middle">
+                <div class="timeline__point"></div>
+                <div class="timeline__point timeline__point--bottom"></div>
+              </div>
+              <div
+                class="timeline__component timeline__component--bottom timeline__component--bg"
+              >
+                <h4 class="timeline__title">
+                  O'clock - Projet de fin de formation
+                </h4>
+                <span class="timeline__place" aria-label="À domicile">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                  Téléprésentiel</span
+                >
+                <p class="timeline__paragraph">
+                  Site internet Nearby - Product Owner et Lead Dev Back-end.
+                </p>
+                <ul>
+                  <li>
+                    Création du cahier des charges : wireframes, users stories,
+                    <abbr title="Modèle Conceptuel des Données">MCD</abbr>,
+                    <abbr title="Minimum Viable Product">MVP</abbr>,
+                    <abbr title="Modèle Logique des Données">MLD</abbr>,
+                    <abbr title="Modèle Physique des Données">MPD</abbr>,
+                    arborescence.
+                  </li>
+                  <li>Méthodologie SCRUM (4 sprints)</li>
+                  <li>
+                    Création des entités et des relations, mise en place du
+                    <em
+                      ><abbr title="CRUD: Create, Read, Update and Delete"
+                        >CRUD</abbr
+                      ></em
+                    >
+                  </li>
+                  <li>
+                    Création et développement d'une interface administrateur
+                    responsive avec <em>Symfony</em> 5.4 et Twig.
+                  </li>
+                  <li>
+                    Développement et mise à disposition d'une
+                    <em
+                      ><abbr title="API: application programming interface"
+                        >API</abbr
+                      ></em
+                    >.
+                  </li>
+                  <li>
+                    Gestion de l'authentification avec
+                    <em><abbr title="JWT: JSON Web Tokens">JWT</abbr></em
+                    >.
+                  </li>
+                  <li>
+                    Gestion des uploads de fichers (images)
+                    <em><abbr title="AWS: Amazon Web Services ">AWS</abbr></em
+                    >.
+                  </li>
+                  <li>Déploiement sur <em>Heroku</em></li>
+                </ul>
+              </div>
               <!-- MICRO ENTREPRISE-->
               <div class="timeline__component timeline__component--date">
                 <div class="timeline__date timeline__date--right">
@@ -866,7 +1065,6 @@
                   flocage, broderie).
                 </p>
               </div>
-
               <!-- Autres expériences -->
               <div class="timeline__component timeline__component--date">
                 <div class="timeline__date timeline__date--right">

@@ -15,7 +15,7 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 
 >## Version PDF téléchargeable du CV :
 >
->https://marinaassohoun.github.io/cv/assets/fichiers/CV_KANGAH_MARINA_ASSOHOUN_CDA.pdf
+>https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun_cda.pdf
 
 ### Technologies utilisés :
 - HTML
