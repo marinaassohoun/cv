@@ -8,6 +8,9 @@
   hidden {
     display: none;
   }
+  .navbar__item--icon {
+    font-size: 1.5em;
+  }
 
   p {
     font-size: 1em;
@@ -84,11 +87,12 @@
     gap: 1em;
   }
   .soft__skills {
-    grid-column: span 3;
+    grid-column: 1 / 2;
     grid-row: 1;
   }
   .soft__skills .skill__cards {
-    grid-template-columns: repeat(3, 15em);
+    grid-template-columns: repeat(2, 10em);
+    column-gap: 3.5em;
   }
   .hard__skills {
     grid-column: 1 / 2;
@@ -97,6 +101,17 @@
   .tools {
     grid-column: 2 / 3;
     grid-row: 2;
+  }
+  .technical__skills {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  #technical-skill__cards {
+    grid-template-columns: 20em;
+    row-gap: 1em;
+  }
+  .technical-skill__card--item {
+    margin: 0.5em;
   }
 
   /*** Timeline ***/
@@ -111,7 +126,7 @@
 
   /*** Training section ***/
   #training__section {
-    grid-column: 1;
+    grid-column: 1 / 2;
     grid-row: 3;
   }
 
@@ -121,7 +136,7 @@
   }
   /*** Experience section ***/
   #experience__section {
-    grid-column: 2;
+    grid-column: 2 / 3;
     grid-row: 3;
   }
 }

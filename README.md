@@ -17,6 +17,7 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 >
 >[ici](https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun_cda.pdf)
 
+
 ### Technologies utilisés :
 - HTML
 - CSS
