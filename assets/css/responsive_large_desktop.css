@@ -1,5 +1,5 @@
-/*** Media Query for desktop ***/
-@media screen and (min-width: 1250px) and (max-width: 1839px) {
+/*** Media Query for large desktop ***/
+@media screen and (min-width: 1840px) {
   /*** Navbar ***/
   .navbar {
     background-color: rgba(245, 245, 245, 0.3);
@@ -93,7 +93,7 @@
     width: 1.6em;
   }
   #technical-skill__cards {
-    grid-template-columns: 40em;
+    grid-template-columns: repeat(2, 40em);
     column-gap: 2em;
     row-gap: 1em;
   }
