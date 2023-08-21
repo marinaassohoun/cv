@@ -2,10 +2,7 @@ console.log("Bienvenue !");
 
 const app = {
   init: function () {
-    // skills.init();
     theme.init();
-    // about.init();
-    nav.init();
   },
 };
 

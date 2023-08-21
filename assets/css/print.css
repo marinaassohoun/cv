@@ -1,148 +1,218 @@
 /* Feuille styles css imprimante */
 
 @media print {
-    /**
+  /**
       * Reset global de toutes les propriétés
       */
-    * {
-      all: unset;
-      display: revert;
-    }
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-    /**
+  * {
+    all: unset;
+    /* display: revert; */
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  /**
       * Définition des marges de la page
       */
-    @page {
-      margin: 2cm;
-    }
-    img {
-      max-width: 100%;
-    }
-    input,
-    textarea,
-    select {
-      all: revert;
-    }
-  
-    /**
+  @page {
+    margin: 2cm;
+  }
+  img {
+    max-width: 100%;
+  }
+  input,
+  textarea,
+  select {
+    all: revert;
+  }
+
+  /**
     * Taille de polices globales (13pt=16px), couleur de texte et de fond
     * Famille de police en serif (avec empattements)
     */
-  
-    body {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 13pt;
-      line-height: 1.5;
-      background-color: #fff !important;
-      color: #000 !important;
-    }
-    h1 {
-      font-size: 24pt;
-    }
-    h2 {
-      font-size: 20pt;
-      margin-top: 20pt;
-    }
-    h3,
-    h4 {
-      font-size: 14pt;
-      margin-top: 14pt;
-    }
-    h5,
-    h6 {
-      font-size: 13pt;
-      margin-top: 14pt;
-    }
-  
-    /**
+
+  body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 13pt;
+    line-height: 1.5;
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 20pt;
+    margin-top: 20pt;
+  }
+  h3,
+  h4 {
+    font-size: 14pt;
+    margin-top: 14pt;
+  }
+  h5,
+  h6 {
+    font-size: 13pt;
+    margin-top: 14pt;
+  }
+
+  /**
     * Lignes veuves et orphelines
     */
-  
-    p,
-    blockquote,
-    figcaption {
-      orphans: 3; /* pas de ligne seule en bas */
-      widows: 3; /* pas de ligne seule en haut */
-    }
-  
-    /**
+
+  p,
+  blockquote,
+  figcaption {
+    orphans: 3; /* pas de ligne seule en bas */
+    widows: 3; /* pas de ligne seule en haut */
+  }
+
+  /**
     * Sauts de pages
     */
-  
-    ul,
-    ol,
-    dl,
-    a,
-    table,
-    pre,
-    blockquote {
-      page-break-inside: avoid; /* pas de sauts au sein de ces élements */
-    }
-  
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    img,
-    figure,
-    caption {
-      page-break-inside: avoid; /* pas de sauts au sein de ces élements */
-      page-break-after: avoid; /* pas de saut après ces éléments */
-    }
-  
-    ul,
-    ol,
-    dl {
-      page-break-before: avoid; /* pas de sauts avant de ces élements */
-    }
-  
-    /**
+
+  ul,
+  ol,
+  dl,
+  a,
+  table,
+  pre,
+  blockquote {
+    page-break-inside: avoid; /* pas de sauts au sein de ces élements */
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  figure,
+  caption {
+    page-break-inside: avoid; /* pas de sauts au sein de ces élements */
+    page-break-after: avoid; /* pas de saut après ces éléments */
+    /* break-after: avoid; */
+  }
+
+  ul,
+  ol,
+  dl {
+    page-break-before: avoid; /* pas de sauts avant de ces élements */
+  }
+
+  /**
     * Liens
     */
-  
-    a,
-    a:link,
-    a:visited {
-      background: transparent !important;
-      color: unset;
-      font-weight: 700;
-      text-decoration: underline !important;
-    }
-  
-    a[href^="http"]:after,
-    a[href^="https"]:after {
-      content: " (" attr(href) ")"; /* affichage des URL des liens externes */
-    }
-  
-    /**
+
+  a,
+  a:link,
+  a:visited {
+    background: transparent !important;
+    color: unset;
+    font-weight: 700;
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]:after,
+  a[href^="https"]:after {
+    content: " (" attr(href) ")"; /* affichage des URL des liens externes */
+  }
+
+  /**
     * Masquage des vidéos
     */
-  
-    video,
-    object,
-    iframe {
-      display: none !important;
-      width: 0 !important;
-      height: 0 !important;
-      overflow: hidden !important;
-    }
-  
-    /**
+
+  video,
+  object,
+  iframe {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /**
     * Classes utilitaires
     */
-  
-    .u-print {
-      display: block;
-      display: revert !important; /* affichage des éléments de classe u-print */
-    }
-    .u-no-print {
-      display: none !important; /* masquage des éléments de classe u-no-print */
-    }
+
+  .u-print {
+    display: block;
+    display: revert !important; /* affichage des éléments de classe u-print */
   }
-  
+  .u-no-print {
+    display: none !important; /* masquage des éléments de classe u-no-print */
+  }
+  @page {
+    margin: 1cm; /*  marges pour la page imprimée */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  div,
+  span {
+    display: block; /* Forcer le texte à être affiché en bloc */
+    width: 100%; /* Occuper toute la largeur disponible */
+    font-size: 13pt;
+  }
+
+  img {
+    filter: contrast(150%) grayscale(100%);
+  }
+  img
+  /* section,
+  div {
+    min-width: 100%;
+    display: block;
+  } */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  li {
+    text-align: start;
+  }
+  /* nav {
+    display: none;
+  } */
+  .main__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about__section "
+      "training__section"
+      "skill__section "
+      "experience__section";
+  }
+  .skill__cards {
+    grid-template-columns: repeat(6, 5em);
+    row-gap: 0.1em;
+    column-gap: 0.1em;
+    justify-items: start;
+    padding: 0;
+  }
+  /* .timeline {
+    grid-template-columns: 1fr;
+  } */
+  .timeline__date--right {
+    text-align: left;
+  }
+}
