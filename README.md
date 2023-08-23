@@ -20,7 +20,16 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 - HTML
 - CSS
 - JS
-
+- 
 Pour la gestion du responsive, j'ai principalement utilisé Grid et Flex à quelques endroits.
+
+### Projets réalisés 
+
+> Nearby - projet de fin de formation Developpeur Web et Web Mobile
+> 
+> [Front](https://projet-nearby-front.vercel.app/) réalisé par mes collègues avec ReactJS, Axios et Redux.
+> 
+>  Pour le back-end, mon binôme et moi avons  utilisés : Symfony, AWS, JWT.
+
 
 N'hesitez pas à me contactez pour toutes questions ou remarques. 😊
