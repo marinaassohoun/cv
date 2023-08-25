@@ -1,5 +1,5 @@
-/*** Media Query for tablet ***/
-@media screen and (min-width: 768px) and (max-width: 1249px) {
+/*** Media Query for tablet and desktop  ***/
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   /*** Navbar ***/
   .navbar {
     max-width: 100%;

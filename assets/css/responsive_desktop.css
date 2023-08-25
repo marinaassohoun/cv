@@ -1,5 +1,5 @@
 /*** Media Query for desktop ***/
-@media screen and (min-width: 1250px) and (max-width: 1839px) {
+@media screen and (min-width: 1440px) and (max-width: 1880px) {
   /*** Navbar ***/
   .navbar {
     background-color: rgba(245, 245, 245, 0.3);
@@ -60,50 +60,19 @@
     font-size: 2em;
     font-weight: 600;
   }
-  /*** skill section ***/
-
-  .card__item {
-    padding: 1em 2em;
-  }
-
-  .skill__cards {
-    grid-template-columns: repeat(3, 15em);
-    justify-items: center;
-    row-gap: 1.5em;
-    column-gap: 1.7em;
-    margin-bottom: 1em;
-    padding: 1em;
-  }
-
-  .skills {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(0.3em);
-    border-radius: 2.5em;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    max-width: 100%;
-  }
-  .skill__card--item {
-    width: 15em;
-  }
-  .card__item--text {
-    font-size: 1em;
-  }
-  .skill__image {
-    width: 1.6em;
-  }
-  #technical-skill__cards {
-    grid-template-columns: 40em;
-    column-gap: 2em;
-    row-gap: 1em;
-  }
-  .technical-skill__card--item {
-    margin: 2em;
-  }
   /*** Main skills section ***/
   #skill__section {
     grid-column: span 2;
     grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+  }
+  #skill__section > .skills {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 1em;
   }
   #training__section p,
   #experience__section p {
@@ -113,8 +82,49 @@
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
   }
-  .tools {
+
+  /*** skill section ***/
+
+  .card__item {
+    padding: 1em 2em;
+  }
+
+  .skill__cards {
+    grid-template-columns: repeat(2, 15em);
+    justify-items: center;
+    row-gap: 1.5em;
+    column-gap: 1.7em;
     margin-bottom: 1em;
+    padding: 1em;
+  }
+  .skills {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.3em);
+    border-radius: 2.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    max-width: 100%;
+  }
+  .skill__card--item {
+    width: 12em;
+  }
+  .card__item--text {
+    font-size: 1em;
+  }
+  .skill__image {
+    width: 1.6em;
+  }
+  .card__item:hover,
+  .technical-card__item:hover {
+    transform: scale(1.1);
+  }
+  #technical-skill__cards {
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    row-gap: 1em;
+  }
+  .technical-skill__card--item {
+    margin: 2em;
   }
 
   /*** Timeline ***/
