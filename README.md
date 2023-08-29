@@ -4,7 +4,7 @@ Bienvenue sur le Repository de mon CV en ligne.
 
 Je suis **marina ASSOHOUN**, ***développeuse web*** junior. 
 
-Je suis actuellement à la recherche d'un entreprise pouvont m'accueillir en ***alternance***,pour une formation de ***Concepteur Développeur d'Application**** dispensé par [O'clock](https://oclock.io/formations/alternance).
+Je suis actuellement d'une nouvelle opportunité d'emploi en tant que développeuse  PHP / Symfony / React.
 
 
 Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en consultant mon cv.
