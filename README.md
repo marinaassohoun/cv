@@ -15,7 +15,7 @@ Vous trouverez plus d'informations sur mon parcours, et sur moi simplement, en c
 
 >## Version PDF téléchargeable du CV :
 >
->[ici](https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun_cda.pdf)
+>[ici](https://marinaassohoun.github.io/cv/assets/fichiers/cv_marina_assohoun.pdf)
 ### Technologies utilisés :
 - HTML
 - CSS
@@ -31,5 +31,9 @@ Pour la gestion du responsive, j'ai principalement utilisé Grid et Flex à quel
 > 
 >  Pour le back-end, mon binôme et moi avons  utilisés : Symfony, AWS, JWT.
 
+>  Colorand - projet ReactJs , générateur de dégradé
+> 
+> [Colorand](https://colorand.vercel.app) 
+> 
 
 N'hesitez pas à me contactez pour toutes questions ou remarques. 😊
